@@ -5,6 +5,8 @@ var map = new ol.Map({
   view: new ol.View({
     center: ol.proj.fromLonLat([0, 30]),
     zoom: 1,
+    minZoom: 1,
+    maxZoom: 6,
   }),
 });
 
@@ -573,6 +575,8 @@ attributionList.innerHTML = `
 	<a href="https://github.com/qgis2web/qgis2web">qgis2web</a> &middot;
 	<a href="https://openlayers.org/">OpenLayers</a> &middot;
 	<a href="https://qgis.org/">QGIS</a>	
+  <a href="https://datacatalog.worldbank.org/search/dataset/0038272">世界銀行</a>	&middot;
+	<a href="https://note.com/kentoide">@KentoIDE</a>	
 `;
 var bottomAttributionUl = bottomAttribution.element.querySelector("ul");
 if (bottomAttributionUl) {
